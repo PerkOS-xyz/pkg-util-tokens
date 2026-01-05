@@ -174,7 +174,7 @@ export function getPublicClient(
   return createPublicClient({
     chain,
     transport: http(rpcUrl),
-  });
+  }) as PublicClient;
 }
 
 /**
